@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(lives == 0)
         {
-            winTextObject = "You Lose!"; 
+            
         }
     }
 
