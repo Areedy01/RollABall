@@ -47,10 +47,6 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        else if (lives == 0)
-        {
-            loseTextObject.SetActive(true);
-        }
     }
 
     void SetLivesText()
@@ -60,6 +56,7 @@ public class PlayerController : MonoBehaviour
         if (lives == 0)
         {
             Destroy(this);
+            loseTextObject.SetActive(true);
         }
     }
 
