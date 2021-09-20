@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         lives = 3;
 
         SetCountText();
+        SetLivesText();
         winTextObject.SetActive(false);
     }
 
@@ -44,6 +45,11 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
+    }
+
+    void SetLivesText()
+    {
+        livesText.text = "Lives: " + lives.ToString();
     }
 
     void FixedUpdate()
