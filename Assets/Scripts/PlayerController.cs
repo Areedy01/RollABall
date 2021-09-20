@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
     private int count;
+    private int lives = 3;
     private float movementX;
     private float movementY;
 
@@ -23,7 +24,6 @@ public class PlayerController : MonoBehaviour
         count = 0;
 
         SetCountText();
-        
         winTextObject.SetActive(false);
     }
 
