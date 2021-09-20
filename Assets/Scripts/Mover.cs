@@ -16,6 +16,7 @@ public class Mover : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
+        journeyLength = Vector3.Distance
     }
 
     // Update is called once per frame
