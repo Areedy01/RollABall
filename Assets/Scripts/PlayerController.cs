@@ -47,9 +47,9 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        else if(lives == 0)
+        else if (lives == 0)
         {
-            
+            loseTextObject.SetActive(true);
         }
     }
 
