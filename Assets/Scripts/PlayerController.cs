@@ -45,6 +45,10 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
+        else if(lives == 0)
+        {
+            winTextObject = "You Lose!"; 
+        }
     }
 
     void SetLivesText()
